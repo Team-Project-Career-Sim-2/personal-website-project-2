@@ -1,6 +1,8 @@
-console.log("Hello world!");
+const form = document.querySelector("#form");
+const submitButton = document.querySelector("#submit");
 
-for (let i = 0; i < 100; i++) {
-  console.log("Hello Esteban!");
-  console.log("I have said hello to Esteban " + i + " times.");
-}
+form.addEventListener("submit", (e) => {
+  submitButton.disabled = true;
+  e.preventDefault();
+  window.location.href = window.location.origin + "/html/success.html";
+});
