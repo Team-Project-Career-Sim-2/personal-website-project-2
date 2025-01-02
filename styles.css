@@ -58,7 +58,8 @@ footer {
 }
 
 .centered-header {
-  margin: auto;
+  margin: 0 auto;
+  text-align: center;
   padding: 20px;
 }
 
@@ -112,4 +113,18 @@ button#submit {
 
 button#submit:hover {
   background-color: #93939e; /* New background color on hover */
+}
+
+.lesser-header {
+  font-size: 85%;
+}
+
+.coding-box {
+  flex-direction: column;
+}
+
+.coding-box > a {
+  margin: 0 auto;
+  text-align: center;
+  padding: 3px;
 }
