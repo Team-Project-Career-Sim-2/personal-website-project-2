@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="tidy">
+      <header>
+        <h1>Greg Kurka</h1>
+        <nav>
+          <a href="../index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./portfolio.html">Portfolio</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </header>
+      <main>
+        <div class="content-box contact-box">
+          <h2 class="contact-header">Contact Greg Kurka</h2>
+
+          <form id="form" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required /><br /><br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required /><br /><br />
+
+            <fieldset>
+              <legend>What brings you here?</legend>
+              <input
+                type="radio"
+                id="employer"
+                name="who-are-you"
+                value="employer"
+              />
+              <label for="employer">Potential Employer</label><br />
+
+              <input type="radio" id="peer" name="who-are-you" value="peer" />
+              <label for="peer">Peer</label><br />
+
+              <input
+                type="radio"
+                id="wandering"
+                name="who-are-you"
+                value="wandering"
+              />
+              <label for="wandering">Just Wandering</label>
+            </fieldset>
+            <br />
+
+            <label for="message">Message</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              cols="30"
+              required
+            ></textarea
+            ><br /><br />
+
+            <button id="submit" type="submit">Submit</button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <footer><p class="who-made">© Greg Kurka</p></footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

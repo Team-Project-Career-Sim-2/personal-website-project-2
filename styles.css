@@ -78,5 +78,38 @@ footer {
 }
 
 a:hover {
-  font-size: 125%;
+  color: black;
+}
+
+.contact-form {
+  margin: 0 auto;
+}
+
+.contact-form > textarea,
+.contact-form > input {
+  background-color: #f1eae8;
+}
+
+.contact-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  order: -1;
+}
+
+.contact-box {
+  flex-direction: column;
+}
+
+button#submit {
+  display: block;
+  margin: 0px auto;
+  background-color: #f1eae8;
+  border: 2px black solid;
+  cursor: pointer;
+  transition: background-color 1s ease; /* Smooth transition */
+}
+
+button#submit:hover {
+  background-color: #93939e; /* New background color on hover */
 }
